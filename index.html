@@ -32,6 +32,14 @@
 
   <title>miarepa_pos</title>
   <link rel="manifest" href="manifest.json">
+    <script type="text/javascript">
+    let useHtml = // ...
+    if(useHtml) {
+      window.flutterWebRenderer = "html";
+    } else {
+      window.flutterWebRenderer = "canvaskit";
+    }
+  </script>
 
   <script>
     // The value below is injected by flutter build, do not touch.
@@ -42,6 +50,7 @@
 </head>
 
 <body>
+  
   <script>
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
